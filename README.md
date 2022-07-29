@@ -23,7 +23,7 @@ an AI project to detect if the person wearing mask or not, with big dataset cont
 
 - finally save the model in ( H5 ) format and plot the accuracy and the training loss.
 
- Apply the model on camera
+              Apply the model on camera
 
 - using ( FaceNet ), (DNN - deep neural network ) from cv2 to detect faces, then loading our model for mask detection
 
