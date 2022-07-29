@@ -3,14 +3,14 @@ an AI project to detect if the person wearing mask or not, with big dataset cont
 
 
 
-                                                                            Read and Preprocess Data
+Read and Preprocess Data
 - read the images dataset and load them then convert the loaded images to array 
 - preprocess images and convert the array images to list for both ( data, labels ).
 - convert categories (with mask ), (without mask ) to numbers (1, 0) using ( LabelBinarizer ) 
 - convert label list to numpy array with (np.array) then split the data into ( training and test split )
 - regenerate images of the training data with specific properties using ( ImageDataGenerator )
 
-                                                                            Creating the model 
+ Creating the model 
 - load ( MobileNetV2 ) with " imagenet " as a (weights) parameter because we work on ( images ) in the dataset, and the shape of the image which we set it before.
 - construct the head of the model that will be on the top of our model with many parameters like ( AveragePooling2D, Flatten, Dense, Dropout, Dense )
 
@@ -23,7 +23,7 @@ an AI project to detect if the person wearing mask or not, with big dataset cont
 
 - finally save the model in ( H5 ) format and plot the accuracy and the training loss.
 
-                                                                       Apply the model on camera
+ Apply the model on camera
 
 - using ( FaceNet ), (DNN - deep neural network ) from cv2 to detect faces, then loading our model for mask detection
 
